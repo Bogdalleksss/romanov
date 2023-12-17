@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Panton;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Panton-LightCaps.otf) format("opentype")
+}
+
+@font-face {
+    font-family: Panton;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Panton-BlackCaps.otf) format("opentype")
+}
+
+@font-face {
+    font-family: "Rockwell.ttf";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Rockwell.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: "Rockwell-Bold.ttf";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Rockwell-Bold.ttf) format("truetype")
+}
