@@ -4138,7 +4138,7 @@ img {
 }
 
 .finka-content__text span {
-    font-weight: 700
+    font-weight: 600
 }
 
 @media(max-width: 1024px) {
@@ -4590,7 +4590,7 @@ img {
 }
 
 .finka-points__text span {
-    font-weight: 700
+    font-weight: 600
 }
 
 .finka-points__bottle {

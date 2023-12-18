@@ -49,7 +49,7 @@
                     </li>
                     <li
                         class="menu__list--active"
-                        :style="linkActiveOption"  
+                        :style="linkActiveOption"
                     />
                 </ul>
             </div>
@@ -88,10 +88,12 @@ export default {
         window.removeEventListener('scroll', this.scrollHandler);
     },
     computed: {
-        
+
     },
     mounted() {
-        this.setStyleActiveLink();
+        // setTimeout(() => {
+          this.setStyleActiveLink();
+        // }, 50)
         setTimeout(() => this.isInit = true, 0)
         window.addEventListener('scroll', this.scrollHandler);
     },

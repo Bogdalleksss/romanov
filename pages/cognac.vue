@@ -1,9 +1,9 @@
 <template>
   <div class="cognac page page_bg page_warning">
     <div class="cognac-intro">
-      <div class="cloud2"></div>
+<!--      <div class="cloud2"></div>-->
       <div class="cloud1"></div>
-      <div class="cloud3"></div>
+<!--      <div class="cloud3"></div>-->
       <div class="cloud4"></div>
       <div class="bottle animate-fade"></div>
       <div class="zerno-intro__container container animate">
@@ -47,8 +47,9 @@
           </div>
           <div class="col">
             <p>
-              На производстве компании <span>Prunier</span> всегда использовался исключительно ручной труд. Купажирование производят мастера, которые посвятили производству крепкой a накопленные знания передают детям
-              по наследству.
+              Выдержка коньяка <span>LA FAMILLE ROMANOV VSOP</span> проходит до 4  лет в бочках, которые обязательно изготавливаются по старинным традициям из отборной древесины лимузенского дуба. Причем, при их производстве никогда
+              не используются гвозди, которые имеют свойство передавать содержимому емкости неприятный металлический привкус, а также склеивающие вещества,
+              которые способны полностью испортить качество, вкус и запах алкогольного напитка.
             </p>
           </div>
         </div>
@@ -130,6 +131,20 @@ export default {
       opacity: 64%;
     }
 
+    .cloud1 {
+      background-image: url(~/assets/img/cognac/cloud-1.png);
+      width: 815px;
+      height: 455px;
+    }
+
+    .cloud4 {
+      background-image: url(~/assets/img/cognac/cloud-2.png);
+      width: 847px;
+      height: 485px;
+      right: auto;
+      left: 0;
+    }
+
     &__title {
       font-family: "Playfair Display",sans-serif;
       font-weight: 600;
@@ -190,6 +205,7 @@ export default {
     position: absolute;
     bottom: 0;
     right: 0;
+    max-width: 40vw;
   }
   .row {
     display: grid;
@@ -226,14 +242,14 @@ export default {
   }
 
   ul {
-    margin-top: 42px;
+    margin-top: 58px;
     margin-bottom: 70px;
 
     li {
       font-weight: 300;
       font-size: 16px;
       line-height: 30px;
-      margin-top: 28px;
+      margin-top: 12px;
 
       b {
         font-weight: 500;
@@ -244,12 +260,16 @@ export default {
   &-description {
     padding-top: 280px;
     padding-bottom: 150px;
-    margin-top: -200px;
+    margin-top: -230px;
     z-index: 3;
     position: relative;
     background-image: url(~/assets/img/cognac/bg-block-2.png);
     background-size: cover;
     background-position: center;
+
+    img {
+      max-width: 88%;
+    }
   }
 
   @media (min-width: 1600px) {
@@ -298,22 +318,29 @@ export default {
   @media (max-width: 1024px) {
     &-intro {
       .bottle {
-        transform: translateX(calc(-80% + 23px))
+        transform: translateX(calc(-40% + 23px));
+        height: 335px;
+        width: 215px;
+        background-size: cover;
+        top: 910px;
+
       }
 
       .zerno-intro__container {
-        justify-content: flex-end;
+        justify-content: center;
       }
 
       &__inner {
-        width: 50%;
+        width: 100%;
+        padding-bottom: 300px;
+        text-align: center;
       }
 
       &__title {
         display: flex;
         flex-direction: column;
         gap: 14px;
-        align-items: flex-start;
+        align-items: center;
 
         span {
           line-height: 39px;
@@ -322,7 +349,7 @@ export default {
       }
 
       &__text {
-        margin-bottom: 50px;
+        margin-bottom: 420px;
         font-size: 20px;
         line-height: 40px;
       }
@@ -339,9 +366,29 @@ export default {
       opacity: 50%;
     }
 
+    .row {
+      grid-template-columns: 1fr;
+      margin-bottom: 60px;
+      gap: 50px;
+
+      &:last-child {
+        .col {
+          &:last-child {
+            order: -1;
+          }
+        }
+      }
+    }
+
+    &-description {
+      text-align: center;
+    }
+
     &-about {
       z-index: 2;
       position: relative;
+      text-align: center;
+
 
       .row {
         grid-template-columns: 1fr;
@@ -354,13 +401,7 @@ export default {
       padding-top: 358px;
 
       .bottle {
-        transform: translateX(calc(-90% + 24px));
-        height: 694px;
-        width: 401px;
-        background-size: cover;
-        top: auto;
-        bottom: 13px;
-        z-index: 2;
+        top: 750px;
       }
 
 
@@ -395,19 +436,6 @@ export default {
       }
     }
 
-    .row {
-      grid-template-columns: 1fr;
-      margin-bottom: 100px;
-
-      &:first-child {
-        .col {
-          &:last-child {
-            order: -1;
-          }
-        }
-      }
-    }
-
     h2 {
       font-size: 32px;
       line-height: 45px;
@@ -423,6 +451,10 @@ export default {
       padding-top: 289px;
       padding-bottom: 0;
       margin-top: -332px;
+
+      img {
+        max-width: 100%;
+      }
     }
   }
 }

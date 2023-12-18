@@ -118,8 +118,7 @@
             <div class="finka-points">
                 <div class="finka-points__container container">
                     <div class="finka-points__text">
-                        <span>Дизайн</span>
-                        , граничащий<br>с искусством
+                        <span>Дизайн</span>, граничащий<br>с искусством
                     </div>
                     <div class="finka-points__bottle">
                         <img src="~/assets/img/finka/example.png" alt="Finka">
@@ -198,5 +197,5 @@ export default {
 }
 </script>
 <style lang="">
-    
+
 </style>

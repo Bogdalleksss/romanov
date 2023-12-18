@@ -43,7 +43,7 @@
                                 </div>
                                 <div class="romanov-product__list--item">
                                     <span>Объем:</span>
-                                    0,5 &nbsp;л; 0,7 &nbsp;л; 0,7 &nbsp;л в &nbsp;подарочной упаковке; 1,75 &nbsp;л
+                                    0,5&nbsp;л; 0,7&nbsp;л; 0,7&nbsp;л в&nbsp;подарочной упаковке; 1,75&nbsp;л
                                 </div>
                             </div>
                             <div class="romanov-product__more">Подробнее</div>
@@ -191,7 +191,7 @@ export default {
                     num: 2,
                     text: "Символика солнца как один из узнаваемых атрибутов тронного зала царской семьи Романовых.",
                 },
-                
+
                 {
                     num: 4,
                     text: "Дно с уникальным рельефным искрящимся рисунком с хрустальным переливом.",
@@ -229,5 +229,5 @@ export default {
 }
 </script>
 <style lang="">
-    
+
 </style>

@@ -53,9 +53,9 @@ export default {
   name: 'default',
   data() {
     return {
-        showAgreement: false,
+        showAgreement: true,
         showReject: false,
-        loaded: true,
+        loaded: false,
         menu: [
             {
                 id: 0,
@@ -72,11 +72,11 @@ export default {
                         name: "COGNAC VSOP",
                         route: "/cognac"
                     },
-                    {
-                        id: 13,
-                        name: "VODKA ALEXANDER I",
-                        route: "/romanov-3"
-                    },
+                    // {
+                    //     id: 13,
+                    //     name: "VODKA ALEXANDER I",
+                    //     route: "/romanov-3"
+                    // },
                 ],
             },
             {
