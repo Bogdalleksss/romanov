@@ -179,7 +179,7 @@ export default {
             position: absolute;
             display: grid;
             grid-template-columns: 1fr;
-            width: 200%;
+            width: 148%;
             top: 120%;
             padding-top: 30px;
             opacity: 0;

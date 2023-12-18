@@ -115,6 +115,7 @@ export default {
 </script>
 <style lang="scss">
 .cognac {
+
   &-intro {
     background: url(~/assets/img/cognac/bg-intro.png) top no-repeat;
     padding-top: 480px;
@@ -278,6 +279,12 @@ export default {
         width: 52%;
         max-width: 52%;
       }
+    }
+  }
+
+  @media (min-width: 1500px) {
+    &-description {
+      background-size: contain;
     }
   }
 
