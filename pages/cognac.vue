@@ -9,7 +9,7 @@
       <div class="zerno-intro__container container animate">
         <div class="cognac-intro__inner">
           <div class="cognac-intro__title">
-            LA FAMILLE   <span>ROMANOV VSOP</span>
+            <span>LA FAMILLE</span>   ROMANOV VSOP
           </div>
           <div class="cognac-intro__text">
             Изготовлен из винограда сорта <br>
@@ -253,7 +253,7 @@ export default {
       margin-top: 12px;
 
       b {
-        font-weight: 500;
+        font-weight: 600;
       }
     }
   }
